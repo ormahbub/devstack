@@ -3,7 +3,7 @@ import logo from "../../assets/logo-text.png";
 
 function Header() {
   return (
-    <header>
+    <header className="bg-white border-b border-[#eeeeee]">
       <div className="container grid grid-cols-12 items-center justify-between py-3">
         <a className="col-span-3" href="/">
           <img className="w-[140px]" src={logo} alt="Logo" />

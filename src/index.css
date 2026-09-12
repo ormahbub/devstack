@@ -1,9 +1,10 @@
 @import "tailwindcss";
 * {
-    transition: all 0.3s;
+  transition: all 0.3s;
 }
 :root {
-  --dark-color: #475569;
+  --dark-color: #0F172A;
+  --text-color: #475569;
   --primary-color: #db2777;
 }
 
@@ -13,9 +14,15 @@
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
-  color: var(--dark-color);
+  color: var(--text-color);
   font-size: 14px;
 }
+h1,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
+}
+
 a {
   font-weight: 500;
 }
