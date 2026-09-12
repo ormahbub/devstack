@@ -1,1 +1,29 @@
 @import "tailwindcss";
+* {
+    transition: all 0.3s;
+}
+:root {
+  --dark-color: #475569;
+  --primary-color: #db2777;
+}
+
+.container {
+  @apply mx-auto w-[1200px];
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--dark-color);
+  font-size: 14px;
+}
+a {
+  font-weight: 500;
+}
+a:hover {
+  color: var(--primary-color);
+}
+
+.btn:hover {
+  background-color: var(--dark-color);
+  color: white;
+}
