@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 function StackSidebar({ stack, removeFromStack, clearStack }) {
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 sticky top-6">
+    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 sticky top-20">
       <h2 className="text-xl font-bold text-gray-900">Your Stack</h2>
       <p className="text-sm text-[var(--text-color)] mt-1 mb-4">
         {stack.length === 0

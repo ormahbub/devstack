@@ -23,7 +23,7 @@ function TechnologySection() {
   };
 
   return (
-    <section id="technologies" className="py-12">
+    <section id="technologies" className="pt-20 pb-12">
       <div className="container mx-auto px-4">
         {" "}
         {/* Added mx-auto px-4 for centering */}

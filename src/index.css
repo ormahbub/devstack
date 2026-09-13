@@ -9,7 +9,7 @@
 }
 
 .container {
-  @apply mx-auto w-[1200px];
+  @apply mx-auto lg:w-[1200px];
 }
 
 body {
