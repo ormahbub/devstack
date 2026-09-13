@@ -15,16 +15,16 @@ function Header() {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/about">Technologies</a>
+              <a href="#technologies">Technologies</a>
             </li>
             <li>
-              <a href="/about">Projects</a>
+              <a href="#">Projects</a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="#">About</a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a href="#">Contact</a>
             </li>
           </ul>
         </nav>
