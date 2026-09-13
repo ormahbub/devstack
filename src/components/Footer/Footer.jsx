@@ -4,8 +4,8 @@ import SiteLogo from "../../assets/logo-text.png";
 function Footer() {
   return (
     <footer className="border-t border-gray-200 pt-12">
-      <div className="container grid grid-cols-12 gap-4">
-        <div className="col-span-6">
+      <div className="container grid grid-cols-12 gap-8 lg:gap-4 px-4">
+        <div className="col-span-12 lg:col-span-6">
           <img src={SiteLogo} alt="Site Logo" />
           <p className="max-w-[75%] text-[var(--text-color)] text-[14px] leading-[20px] mt-2">
             Curated tools, technologies, and resources for developers building
@@ -23,7 +23,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-12 lg:col-span-2">
           <h4 className="font-semibold uppercase text-[var(--dark-color)] mb-4">
             Product
           </h4>
@@ -39,7 +39,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-12 lg:col-span-2">
           <h4 className="font-semibold uppercase text-[var(--dark-color)] mb-4">
             Company
           </h4>
@@ -55,7 +55,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-12 lg:col-span-2">
           <h4 className="font-semibold uppercase text-[var(--dark-color)] mb-4">
             Legal
           </h4>
@@ -69,7 +69,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="container mt-12 py-6 border-t border-gray-200 py-4 flex justify-between items-center">
+      <div className="container mt-12 py-6 border-t border-gray-200 py-4 flex flex-col lg:flex-row justify-center lg:justify-between items-center">
         <p className="text-[var(--text-color)] text-[14px]">
           © 2026 Dev Stack. All rights reserved.
         </p>

@@ -2,10 +2,9 @@ import React from "react";
 import { toast } from "react-toastify";
 
 function StackCard({ tech, isSelected, onAdd }) {
-  const notifyAdd = () => toast.success(`${tech.name} added to your stack!`);
   return (
     <div
-      className={`relative bg-white rounded-xl p-6 transition-all duration-300 flex flex-col h-full
+      className={`relative col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-xl p-6 transition-all duration-300 flex flex-col h-full
         ${
           isSelected
             ? "border border-red-500 shadow-md"
@@ -24,8 +23,12 @@ function StackCard({ tech, isSelected, onAdd }) {
         )}
       </div>
 
-      <h3 className="text-lg font-bold text-[var(--dark-color)] mb-2">{tech.name}</h3>
-      <p className="text-sm text-[var(--text-color)] mb-6 flex-grow">{tech.description}</p>
+      <h3 className="text-lg font-bold text-[var(--dark-color)] mb-2">
+        {tech.name}
+      </h3>
+      <p className="text-sm text-[var(--text-color)] mb-6 flex-grow">
+        {tech.description}
+      </p>
 
       <div className="flex justify-between items-center text-xs text-gray-600 mb-4 bg-gray-50 p-2 rounded-lg">
         <span>{tech.category}</span>
@@ -37,10 +40,12 @@ function StackCard({ tech, isSelected, onAdd }) {
 
       <button
         onClick={() => {
-          notifyAdd();
           onAdd();
+          isSelected
+            ? toast.info(`${tech.name} is already in your stack.`)
+            : toast.success(`${tech.name} added to your stack!`);
         }}
-        disabled={isSelected}
+        // disabled={isSelected}
         className={`w-full py-2 rounded-md font-semibold text-sm transition-colors
           ${
             isSelected
@@ -49,7 +54,7 @@ function StackCard({ tech, isSelected, onAdd }) {
           }
         `}
       >
-        {isSelected ? "Added" : "Add to Stack"}
+        {isSelected ? "✓ Added to Stack" : "Add to Stack"}
       </button>
     </div>
   );

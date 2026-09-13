@@ -3,7 +3,7 @@ import StackCard from './StackCard';
 
 function StackGrid({ data, stack, addToStack }) {
   return (
-    <div className="grid grid-cols-3 gap-6">
+    <div className="grid grid-cols-12 gap-6">
       {data.map((tech) => (
         <StackCard 
           key={tech.id} 

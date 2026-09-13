@@ -24,10 +24,11 @@ function StackSidebar({ stack, removeFromStack, clearStack }) {
               className="flex justify-between items-center p-3 bg-gray-50 rounded-lg border border-gray-100"
             >
               <div className="flex items-center gap-3">
-                <img src={item.icon} alt="" className="w-5 h-5" />
-                <span className="text-sm font-medium text-gray-800">
-                  {item.name}
-                </span>
+                <img src={item.icon} alt="" className="w-8 h-8" />
+                <p className="flex flex-col">
+                  <span className="font-semibold text-[var(--dark-color)]">{item.name}</span>
+                  <span className="text-[var(--text-color)] text-xs">{item.category}</span>
+                </p>
               </div>
               <button
                 onClick={() => {
