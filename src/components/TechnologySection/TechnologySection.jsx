@@ -41,7 +41,7 @@ function TechnologySection() {
         {/* Added mx-auto px-4 for centering */}
         <h2 className="text-[var(--dark-color)] text-[24px] text-center lg:text-left lg:text-[36px] font-[800]">
           Explore the{" "}
-          <span className="bg-gradient-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
+          <span className="gradient-text">
             Technologies
           </span>
         </h2>

@@ -9,7 +9,7 @@ function Banner() {
           <h1 className="font-[900] text-center lg:text-left text-[var(--dark-color)] text-[32px] lg:text-[60px] leading-[38px] lg:leading-[68px]">
             Build Your Ideal
             <br />
-            <span class="bg-gradient-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
+            <span class="gradient-text">
               Development Stack
             </span>
           </h1>

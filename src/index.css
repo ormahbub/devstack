@@ -3,13 +3,16 @@
   transition: all 0.3s;
 }
 :root {
-  --dark-color: #0F172A;
+  --dark-color: #0f172a;
   --text-color: #475569;
   --primary-color: #db2777;
 }
 
 .container {
   @apply mx-auto lg:w-[1200px];
+}
+.gradient-text {
+  @apply bg-gradient-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent;
 }
 
 body {
